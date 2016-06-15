@@ -2379,6 +2379,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/scripts\/scrollmagic\/animationgsap.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/scripts\/scrollmagic\/animationgsap.js",
+		"outputAbbreviatedPath": "\/assets\/js\/scripts\/scrollmagic\/min\/animationgsap-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/scripts\/scrollmagic\/min\/addindicators-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -2637,6 +2648,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
+		},
+	"\/page-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/page.php": {
 		"fileType": 8192,
@@ -6965,7 +6985,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "MD Starter Theme (testing)",
+	"displayValue": "Matt Down",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "harddrive_yellow"
 	},

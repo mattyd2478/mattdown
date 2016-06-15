@@ -17,13 +17,15 @@ function site_scripts() {
     
     
     // GREENSOCK (more plugins available in plugins folder)
-    // wp_enqueue_script( 'greensock-js', get_template_directory_uri() . '/assets/js/scripts/greensock/src/minified/TweenMax.min.js', array( 'jquery' ), '', true );
-    // wp_enqueue_script( 'greensock-tl-js', get_template_directory_uri() . '/assets/js/scripts/greensock/src/minified/TimelineMax.min.js', array( 'jquery' ), '', true );
+     wp_enqueue_script( 'greensock-js', get_template_directory_uri() . '/assets/js/scripts/greensock/src/minified/TweenMax.min.js', array( 'jquery' ), '', true );
+     wp_enqueue_script( 'greensock-tl-js', get_template_directory_uri() . '/assets/js/scripts/greensock/src/minified/TimelineMax.min.js', array( 'jquery' ), '', true );
     
     
     // SCROLLMAGIC
-    // wp_enqueue_script( 'scrollmagic-js', get_template_directory_uri() . '/assets/js/scripts/scrollmagic/ScrollMagic.min.js', array( 'jquery' ), '', false );  
-    // wp_enqueue_script( 'scrollmagic-indicators-js', get_template_directory_uri() . '/assets/js/scripts/scrollmagic/addindicators.js', array( 'jquery' ), '', true );
+     wp_enqueue_script( 'scrollmagic-js', get_template_directory_uri() . '/assets/js/scripts/scrollmagic/ScrollMagic.min.js', array( 'jquery' ), '', true );  
+     wp_enqueue_script( 'scrollmagic-indicators-js', get_template_directory_uri() . '/assets/js/scripts/scrollmagic/addindicators.js', array( 'jquery' ), '', true );
+     wp_enqueue_script( 'scrollmagic-animationgsap-js', get_template_directory_uri() . '/assets/js/scripts/scrollmagic/animationgsap.js', array( 'jquery' ), '', true );
+
     
     
     // OWL CAROUSEL
