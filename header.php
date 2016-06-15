@@ -48,29 +48,33 @@
 					<!-- start top header -->
 					<header class="header" role="banner">
 						
+						<div class="top-bar-right show-for-medium">
+							<?php joints_top_nav(); ?>	
+						</div>	
+													
 						<div id="nav-wrap">
 							
-							<div class="top-bar" id="top-bar-menu">
-								
-								<div class="top-bar-left">
-									<ul class="menu">
-										<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
-									</ul>
-								</div>
-								
-								<div class="top-bar-right show-for-medium">
-									<?php joints_top_nav(); ?>	
-								</div>
-								
-								<div class="top-bar-right float-right show-for-small-only">
-									<ul class="menu">
-										<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
-										<li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li>
-									</ul>
-								</div>
-								
+							<div id="site-logo">
+							Logo in here
+							</div>
+							
+							<div id="site-navigation">
+								Nav
+							</div>
+							
+							<div id="site-bottom">
+								Bottom
 							</div>
 						
 						</div><!-- close nav wrap -->
 		 	
 					</header><!-- end .header -->
+					
+					
+<!--
+								<div class="top-bar-right float-right show-for-small-only">
+									<ul class="menu">
+										<li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li>
+									</ul>
+								</div>
+-->

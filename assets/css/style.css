@@ -4270,7 +4270,6 @@ Core layout
     width: 100%; }
 
 header.header {
-  background: blue;
   width: 200px; }
   @media screen and (max-width: 47.9375em) {
     header.header {
@@ -4288,18 +4287,154 @@ Main Navigation
 #nav-wrap {
   border: 1px solid red;
   position: fixed;
-  width: 200px; }
+  width: 200px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: grey; }
   @media screen and (max-width: 47.9375em) {
     #nav-wrap {
       position: relative;
-      width: 100%; } }
+      width: 100%;
+      height: 75px;
+      min-height: 75px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      background-color: aqua; } }
+  #nav-wrap #site-logo {
+    border: 1px solid yellow;
+    margin-top: 30px; }
+    @media screen and (max-width: 47.9375em) {
+      #nav-wrap #site-logo {
+        margin-top: 0px; } }
+  #nav-wrap #site-navigation {
+    border: 1px solid orange; }
+  #nav-wrap #site-bottom {
+    border: 1px solid green;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 47.9375em) {
+      #nav-wrap #site-bottom {
+        display: none; } }
+
+/**************************************************************************
+Container classes (for height and width)
+**************************************************************************/
+/* heights */
+.full-height {
+  min-height: 100vh; }
+
+.half-height {
+  min-height: 50vh;
+  border: 1px dotted grey; }
+
+/* widths */
+.half-width-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.half-width {
+  width: 50%; }
+  .half-width.red {
+    background-color: red; }
+  .half-width.blue {
+    background-color: blue; }
+
+/* alignments */
+.vert-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.horiz-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* restrictions */
+.padded {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 /**************************************************************************
 Testing stuff
 **************************************************************************/
-.full-window-height {
-  height: 100vh;
-  border-bottom: 1px solid black; }
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative; }
+
+.no-video .video-container video,
+.touch .video-container video {
+  display: none; }
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important; }
+
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000; }
+
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute; }
+
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%; }
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0; }
+
+.video-container video.fillWidth {
+  width: 100%; }
+
+.test-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black; }
 
 /******************************************************************
 

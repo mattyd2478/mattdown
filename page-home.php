@@ -8,22 +8,34 @@
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<?php get_template_part( 'parts/loop', 'page' ); ?>
+					<?php //get_template_part( 'parts/loop', 'page' ); ?>
 					
 				<?php endwhile; endif; ?>
 				
-				<div id="test-1" class="full-window-height">
-					<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla non bibendum eros, ut mattis enim. Etiam pretium lorem nulla, vel suscipit elit faucibus ultrices. Quisque sit amet semper tellus, eu laoreet risus. Nam tortor turpis, efficitur non convallis at, hendrerit ut orci. Fusce vel facilisis leo. Aliquam commodo semper nisl, nec ultricies tortor laoreet in. Vestibulum porta malesuada nunc vitae eleifend. Aenean sodales felis sed nunc scelerisque, eu semper libero tristique. Sed ornare rhoncus facilisis. Nunc odio nulla, sodales sed ultricies vitae, venenatis non felis. Suspendisse volutpat dui ante, id blandit quam malesuada pharetra. Aliquam ut purus erat. Nam commodo eget justo a sollicitudin.</p>
-					
-				</div>	
-				<div id="test-2" class="full-window-height">
-					<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla non bibendum eros, ut mattis enim. Etiam pretium lorem nulla, vel suscipit elit faucibus ultrices. Quisque sit amet semper tellus, eu laoreet risus. Nam tortor turpis, efficitur non convallis at, hendrerit ut orci. Fusce vel facilisis leo. Aliquam commodo semper nisl, nec ultricies tortor laoreet in. Vestibulum porta malesuada nunc vitae eleifend. Aenean sodales felis sed nunc scelerisque, eu semper libero tristique. Sed ornare rhoncus facilisis. Nunc odio nulla, sodales sed ultricies vitae, venenatis non felis. Suspendisse volutpat dui ante, id blandit quam malesuada pharetra. Aliquam ut purus erat. Nam commodo eget justo a sollicitudin.</p>
-					
+				<div id="top-video">
+					<div class="homepage-hero-module">
+					    <div class="video-container">
+					        <div class="filter"></div>
+					        <video autoplay loop class="fillWidth">
+					            <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/Procrastination.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+					            <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/Procrastination.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+					        </video>
+					        <div class="poster hidden">
+					            <img src="PATH_TO_JPEG" alt="">
+					        </div>
+					    </div>
+					</div>
 				</div>
 				
-				<div id="test-3" >
-					<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla non bibendum eros, ut mattis enim. Etiam pretium lorem nulla, vel suscipit elit faucibus ultrices. Quisque sit amet semper tellus, eu laoreet risus. Nam tortor turpis, efficitur non convallis at, hendrerit ut orci. Fusce vel facilisis leo. Aliquam commodo semper nisl, nec ultricies tortor laoreet in. Vestibulum porta malesuada nunc vitae eleifend. Aenean sodales felis sed nunc scelerisque, eu semper libero tristique. Sed ornare rhoncus facilisis. Nunc odio nulla, sodales sed ultricies vitae, venenatis non felis. Suspendisse volutpat dui ante, id blandit quam malesuada pharetra. Aliquam ut purus erat. Nam commodo eget justo a sollicitudin.</p>
-					
+				
+				<div id="block-1" class="half-height half-width-wrap">
+
+					<div class="half-width red padded">
+						Left
+					</div>
+					<div class="half-width blue padded vert-center horiz-center">
+						<div class="test-box">Test Box</div>
+					</div>					
 				</div>								
 
 			</main> <!-- end #main -->
