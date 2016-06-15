@@ -1,0 +1,59 @@
+/**************************************************************************
+Stylesheet: Main Stylesheet
+**************************************************************************/
+
+
+/**************************************************************************
+Stylesheet: Main Stylesheet
+**************************************************************************/
+
+@import "variables";		// use to store things like common colours etc;
+
+
+
+/**************************************************************************
+Sticky Footer using flexbox (bad preformance on scrolling if using scrollmagic:/)
+**************************************************************************/
+
+.off-canvas-wrapper, .off-canvas-wrapper-inner{
+	
+	height:100%;
+}
+
+.off-canvas-content{
+	
+	display: flex;
+	flex-direction: column;
+}
+#content{
+	
+	flex:1;
+}
+
+
+/**************************************************************************
+Content blocks identification assistance styles (delete)
+**************************************************************************/
+
+
+header{
+	
+	&.header{
+		
+		border-bottom:1px solid grey;
+		background-color: #f5f5f5;
+		height:150px;
+	}
+}
+
+
+footer{
+	
+	
+	&.footer{
+		
+		border-top:1px solid grey;
+		background-color: #f5f5f5;		
+		
+	}
+}
